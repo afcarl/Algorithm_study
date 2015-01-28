@@ -1,3 +1,5 @@
+// Author: Oh2
+
 #include <iostream>
 using namespace std;
 
@@ -7,8 +9,23 @@ class BST {
   
 public:
   BST(node* root) : root_m(root){}
-  
+  node* search(T x) {
+    
+  }
+  node* insert(T x) {
+    
+  }
+  node* delete(T x) {
 
+  }
+  node* pred(node* x) {
+
+  }
+  node* succ(node* x) {
+
+  }
+  
+  
   
 private:
   struct node {
