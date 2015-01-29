@@ -13,7 +13,7 @@ This is my notes of studying graph algorithms.
        Standing for an edge connecting u and v.
        And there are totally V nodes.
 
-       Moreover, if the edges have their own weight, we can store it in fllowing way.
+       Moreover, if the edges have their own weight, we can store it in following way.
 
        #include <vector>
        #include <utility>
