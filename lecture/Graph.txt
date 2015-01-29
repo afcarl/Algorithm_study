@@ -1,0 +1,14 @@
+This is my notes of studying graph algorithms.
+
+1.Representation of grphs
+  1) Adjacency list representation
+     This is for sparse graph.
+
+       Adjacency list template for my C++:
+
+       #include <vector>
+       vector<int> Graph[V];
+       Graph[u].push_back(v);
+
+       Standing for an edge connecting u and v.
+       And there are totally V nodes.
