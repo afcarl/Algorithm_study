@@ -9,7 +9,8 @@ which is written by the author of these problem sets.
 
 Codeforces #288
 
-Problem A
+<hr>
+<h2>Problem A</h2>
 
 类似于染色问题，给一个n * m的方块矩阵，然后有k步染色，每一步提供染色点的横纵坐标值。
 如果到某一步的时候恰好出现了有一块2*2的方阵全被染色了的话就输出这一步的步数，如果全部步数都走完了仍然没有出现这样的方阵的话就输出0。
