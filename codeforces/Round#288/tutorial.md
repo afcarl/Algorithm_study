@@ -8,7 +8,7 @@ http://codeforces.com/blog/fcspartakm
 which is written by the author of these problem sets.
 
 Codeforces #288
-
+<br/>
 <hr>
 <h2>Problem A</h2>
 
