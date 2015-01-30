@@ -67,3 +67,19 @@ https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23288/508C
 此题真的略难，我觉得自己还需要精进功力。
 
 https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23288/508D.cpp
+
+<hr>
+<h3>Problem E</h3>
+
+此题也略难
+比D简单。
+
+其实本来应该是很难的，官方解答是一种dp的思路，那种思路表示看不懂，后来幸好邂逅了一种贪心的算法。这种贪心的算法说的是当我们能够匹配的时候我们就把它匹配上。
+
+搜索解法的时候也看到有人说这就是一道括号匹配的问题，不禁联想起了上课学过的表达式转换问题，可以用栈来做。
+具体方法就是，每读入一行，就push一个index进栈，这个相当于是记录了第几个前括号。然后用cur_len数组记录当时括号加上之后的长度，用left数组记录左界，right数组记录右界，然后在满足一定条件的时候（并且只要满足这个条件就可以）就让另一个后括号出栈。
+具体的条件则是，get当前的长度之后，一定要cur_len+left <= 现在的长度+1，然后 cur_len + right > 现在的长度，不明白这个公式的可以拿手写一下就一定明白了。
+
+这样的贪心法配合我下面的代码应该就可以理解这个问题了。
+
+https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23288/508E.cpp
