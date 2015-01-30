@@ -2,7 +2,9 @@
 Since my english is not well enough to describe the solutions, I decide to write this solution using Chinese.
 
 The english version of official solution can be found here:
+
 http://codeforces.com/blog/fcspartakm
+
 which is written by the author of these problem sets.
 
 Codeforces #288
