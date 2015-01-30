@@ -20,6 +20,7 @@ Codeforces #288
 
 https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23288/508A.cpp
 
+<hr>
 <h3>Problem B</h3>
 
 本质在于对于一个奇数，对他的一对数字进行一次交换，要保证结果是一个偶数，并且输出最大的可能值。如果变不成偶数的话就输出-1。
@@ -29,4 +30,5 @@ https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23288/508A
 
 https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23288/508B.cpp
 
+<hr>
 <h3>Problem C</h3>
