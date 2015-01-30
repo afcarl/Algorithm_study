@@ -1,5 +1,44 @@
 The tutorial of codeforces #288 (div2)
 
-Problem A:
+508A ！ Pasha and Pixels
+To solve this problem let's create matrix with type bool and dimensions n on m. Cell (x,?y) of this matrix is true ！ if this cell painted in black color.
 
-  
+Let on move number k Pasha paints pixel in position (i,?j). Then game ending on this move, if square 2?〜?2 formed from black cells appears, and cell (i,?j) will upper-left, upper-right, bottom-left or bottom-right of this squares. Only this squares we need to check on current move. If we haven't such squares after k moves, print 0. Asymptotic behavior of this solution ！ O(k), where k ！ number of moves.
+
+508B ！ Anton and currency you all know
+Because of specified number is odd (that mean that last digit of this number is odd) we need to swap last digit with some even digit. How to maximize number after this swap?
+
+If number consists only from odd digits print ?-?1.
+
+Else, we need to find first even digit, which less than last digit if we will iterate from most significant digit. If we find such digit ！ swap it with last digit and we have an answer.
+
+Else, we need to find first even digit, which more than last digit if we will iterate from less significant digit. If we find such digit ！ swap it with last digit and we have an answer.
+
+Asymptotic behavior of this solution ！ O(n), where n ！ count of digits in specified number.
+
+508C ！ Anya and Ghosts
+This problem can be solved with help of greedy algorithm. Let's iterate on moments when ghosts will appears.
+
+We need to use use array, in wich we will mark moments of time, in wich we lighted candles (for example, put in corresponding positions 1). Than for every new ghost will count how many candles lights in time of his visit from our array.
+
+If ghost appears in moment of time wi, iterate on out array from wi?-?1 to wi?-?t, where t ！ count of seconds, which candle burns, and count the number of ones. If this count is not less than r, continue iterating on ghosts. Else, iterate on our array from wi?-?1 to wi?-?t, and, if in current second candle didn't lighted ！ make it, and put in this position in array 1. We need to do such operation, while count of ones in this section of our array will not be equals to r. If we can't do this fore some ghost, we can print ?-?1.
+
+Answer to this problem ！ count of ones in our array. Asymptotic behavior of this solution ！ O(mt), where m ！ count of ghosts, t ！ the duration of a candle's burning.
+
+508D ！ Tanya and Password
+At first, let's convert data from input in directed graph. Vertexes in this graph will all strings with length equals to 2 and consisting of uppercase and lowercase letters of the latin alphabet. For all 3-letters strings from input ！ si's, let's add edge from vertex si[0]si[1] to si[1]si[2].
+
+Now we need to find in this graph Euler path. For this we can use Fleury's algorithm. It is worth noting, that Euler path consists, if count of vertexes, in wich in-degree and out-degree differs by one, less then 3, and in-degree and out-degree of others vertexes ！ even. If we can't find Euler path ！ print NO. Asymptotic behavior of this solution ！ O(m), where m ！ count of different 3-letters strings from input. It equals to number of edges in graphs.
+
+508E ！ Arthur and Brackets
+This problem can be solved with help of dynamic dynamic programming. Let's create squre matrix Z with sizes n?〜?n, where n ！ count of open brackets in sequence. Main hint ！ if open bracket is in position l, and corresponding for her close bracket ！ in position r, than from position l?+?1 to position r?-?1 must stay a regular bracket sequence.
+
+In array Z first parametr lf ！ number of open bracket, second parametr rg ！ number of last open bracket, which can be in a regular bracket sequence, which will exists between open bracket with number lf and corresponding for it close bracket.
+
+Z[lf][rg]?=?true if it is possible to construct such sequence. Otherwise Z[lf][rg]?=?false.
+
+For current lf and rg let's iterate on cnt ！ how many open brackets and corresponding them close brackets in a regular bracket sequence will stay between open bracket number lf and corresponding for it close bracket. If this count falls in the given interval for open bracket lf, recurcively run dynamic from two segments ！ (lf?+?1,?lf?+?cnt) and (lf?+?cnt?+?1,?rg).
+
+If for both segments we can construct regular bracket sequences, appropriate to data-in from input, put in Z[lf][rg] value true. To restore answer, we must move from segment (lf,?rg) in segments (lf?+?1,?lf?+?cnt) and (lf?+?cnt?+?1,?rg), if for both this segments we can construct regular bracket sequences and recursively restore asnwer. If Z[0][n?-?1] equals to false, print IMPOSSIBLE. Asymptotic behavior of this solution ！ O(n3).
+
+UPD This problem can be solved with help of griddy algorithm. Asymptotic behavior of this solution ！ O(n). Here is example of such solution, participant matrix.
