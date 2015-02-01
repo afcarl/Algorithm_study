@@ -6,7 +6,7 @@ Notes on studying algorithm
 Some of my solutions haven't been uploaded to github (Since I decide to use it to store my solution recently), you can find them at http://blog.csdn.net/oh233, but this is written by Chinese.
 
 <hr>
-<center> <h2> 一只弱菜的日记 </h2> </center>
+<h2 style="text-align:center"> 一只弱菜的日记 </h2> </center>
 
 <h3> 2015/2/1 </h3>
 还挺不想用这个称呼叫自己的，从当年天不怕地不怕的少年，到现在越来越认清楚自己的实力，这个过程也是比较的心酸乏力。
