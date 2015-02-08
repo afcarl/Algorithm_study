@@ -28,3 +28,13 @@ https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23290/510A
 以此可以扩展出模板吧，《dfs二维图判断是否有环》
 
 https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23290/510B.cpp
+<hr>
+
+<h3> Problem C </h3>
+第一次做这样的题，通过这道题学习了拓扑排序。
+
+大意是说给几个字符串，可能不是按照字典序排列的。但是然后我们需要找到一个字典序，在依照这个新的字典序的情况下，使那几个字符串变成按字典序排列。
+
+查了题解，说是拓扑排序，其实也挺有意思的，规定的关系就是如果检测到给定字符串中字母a应该小于b，那就建立一条a到b的边，实现起来也不是很难。感觉如果知道拓扑排序的知识或者以前做过这样的题的话应该能够秒解的。
+
+https://github.com/Oh233/Algorithm_study/blob/master/codeforces/Round%23290/510C.cpp
