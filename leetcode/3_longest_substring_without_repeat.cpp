@@ -1,5 +1,5 @@
 /*
-* 3_LongestSubstringWithoutRepeat.cpp
+* 3_longest_substring_without_repeat.cpp
 *
 * Author: Qi Haozhi
 * Copyright (c) 2015 Qi Haozhi
