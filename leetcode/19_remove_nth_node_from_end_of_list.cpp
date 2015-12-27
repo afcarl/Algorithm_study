@@ -38,9 +38,8 @@ public:
       ptr = ptr->next;
       pre = pre->next;
     }
-    if (n == 1) {
-      pre->next = NULL;
-    } else if (n == size) {
+
+    if (n == size) {
       head = head->next;
     } else {
       pre->next = ptr->next;
