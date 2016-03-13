@@ -5,6 +5,6 @@ Haven't upload solutions before.
 
 Expalination:
 
-Codeforces 553A
+553A: https://www.zybuluo.com/Oh2/note/131023
 
-https://www.zybuluo.com/Oh2/note/131023
+620C: Greedy, idea is simple but we need to be careful for some details.
