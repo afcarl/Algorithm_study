@@ -1,5 +1,5 @@
 /*
- * 10_regular_expression_matching.cpp
+ * 39_combination_sum.cpp
  *
  * Author: Qi Haozhi
  * Copyright (c) 2016 Qi Haozhi
